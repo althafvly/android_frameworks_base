@@ -2873,4 +2873,6 @@
     <string name="media_output_dialog_connect_failed">Couldn\'t connect. Try again.</string>
     <!-- Title for pairing item [CHAR LIMIT=60] -->
     <string name="media_output_dialog_pairing_new">Pair new device</string>
+  <!-- Biometric Dialog - Use Face -->
+  <string name="biometric_dialog_button_use_face">Use Face</string>
 </resources>

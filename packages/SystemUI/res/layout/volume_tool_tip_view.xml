@@ -20,13 +20,20 @@
     android:id="@+id/tooltip_view"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/volume_tool_tip_arrow_width"
+        android:layout_height="@dimen/volume_tool_tip_arrow_height"
+        android:layout_marginBottom="@dimen/volume_tool_tip_arrow_margin_container"
+        android:layout_marginStart="@dimen/volume_tool_tip_arrow_margin_start"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
         android:paddingEnd="4dp"
+        android:paddingStart="16dp"
         android:background="@drawable/volume_tool_tip_rounded_bg"
         android:orientation="horizontal">
 
@@ -35,9 +42,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:textColor="@android:color/white"
             android:text="@string/volume_odi_captions_tip"
-            android:textSize="14sp"/>
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
         <ImageView
             android:id="@+id/dismiss"
             android:layout_width="40dp"
@@ -52,12 +60,5 @@
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/accessibility_volume_close_odi_captions_tip"/>
     </LinearLayout>
-
-    <View
-        android:id="@+id/arrow"
-        android:layout_width="8dp"
-        android:layout_height="10dp"
-        android:layout_marginLeft="-2dp"
-        android:layout_gravity="center_vertical"/>
 
 </com.android.systemui.volume.VolumeToolTipView>
